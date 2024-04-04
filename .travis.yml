@@ -1,0 +1,7 @@
+sudo: required
+services:
+  - docker
+
+script:
+  - docker build -t my_image_name/npde .
+  - docker images my_image_name/node 
